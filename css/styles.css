@@ -117,7 +117,7 @@ img {
 	color: var(--action-color);
 }
 
-.current.link {
+.link.current{
 	color: var(--action-color);
 }
 
