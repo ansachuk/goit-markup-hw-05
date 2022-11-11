@@ -488,7 +488,7 @@ svg {
 	border: 1px solid #afb1b8;
 	border-radius: 4px;
 
-	transition-property: background-color, border;
+	transition-property:border;
 	transition-duration: var(--anima-duration);
 	transition-timing-function: var(--anima-function);
 }
@@ -503,7 +503,6 @@ svg {
 
 .clients-link:hover,
 .clients-link:focus {
-	background-color: inherit;
 	border: 1px solid var(--action-color);
 }
 
