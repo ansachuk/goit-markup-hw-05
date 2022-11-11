@@ -710,9 +710,9 @@ button {
 .examples-list-item {
 	flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / (var(--items)));
 
-		transition-property: box-shadow;
-			transition-duration: var(--anima-duration);
-			transition-timing-function: var(--anima-function);
+	transition-property: box-shadow;
+	transition-duration: var(--anima-duration);
+	transition-timing-function: var(--anima-function);
 }
 
 .examples-list-item:hover {
@@ -721,13 +721,16 @@ button {
 
 .examples-thumb {
 	position: relative;
+	width: 370px;
+	height: 294px;
+		overflow: hidden;
 }
 
 .examples-discription {
 	position: absolute;
 	left: 0;
 	bottom: -100%;
-	overflow: hidden;
+
 
 	opacity: 0;
 
@@ -748,14 +751,14 @@ button {
 
 	background: rgba(33, 150, 243, 0.9);
 
-	transition-property: transform;
+	transition-property: transform, opacity;
 	transition-duration: var(--anima-duration);
 	transition-timing-function: var(--anima-function);
 }
 
 .examples-list-item:hover .examples-discription {
+	transform: translateY(-100%);
 	opacity: 1;
-	transform: translatey(-100%);
 }
 
 
@@ -779,3 +782,6 @@ button {
 	line-height: calc(30 / 16);
 	letter-spacing: 0.03em;
 }
+
+
+/* ----------- ANIMATIONS --------------- */
