@@ -27,9 +27,7 @@
     <header class="header">
       <div class="header-container container">
         <nav class="nav">
-          <a href="./" class="logo link">
-            <span class="logo-name-web">Web</span>Studio
-          </a>
+          <a href="./" class="logo link"> <span class="logo-name-web">Web</span>Studio </a>
           <ul class="nav-list list">
             <li class="nav-list-item"><a class="link current" href="./index.html">Студія</a></li>
             <li class="nav-list-item"><a class="link" href="./portfolio.html">Портфоліо</a></li>
@@ -556,7 +554,7 @@
         </div>
       </div>
     </footer>
-
+    <!-- --------------- MODAL-WINDOW --------------  -->
     <div data-modal class="backdrop">
       <div class="modal" data-modal-window>
         <button data-modal-close class="modal-btn btn">
@@ -564,6 +562,44 @@
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
+        <!-- ------------- MODAL FORM -------------  -->
+        <div class="modal-field">
+          <strong class="modal-disc">Залиште свої дані, ми вам передзвонимо</strong>
+          <form method="get" class="modal-form" name="modal_form">
+            <label>
+              <span>Ім'я</span>
+              <input type="text" name="username" class="username" />
+            </label>
+			<!-- -------------- MODAL GROUP -------------  -->
+            <div class="modal-form-group">
+              <label>
+                <span>Телефон</span>
+                <input type="tel" name="tel" class="tel" />
+              </label>
+              <label>
+                <span>Пошта</span>
+                <input type="email" name="email" class="email" />
+              </label>
+              <label>
+                <span>Коментар</span>
+                <textarea
+                  name="feedback"
+                  cols="30"
+                  rows="10"
+                  placeholder="Введіть текст"
+                ></textarea>
+              </label>
+            </div>
+            <div role="group" class="">
+              <input class="modal-form-checkbox" type="checkbox" id="user_agreement" />
+              <label for="user_agreement"
+                >Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></label
+              >
+            </div>
+			<!-- ------------- MODAL ACCEPT BUTTON ------------  -->
+            <button type="submit" class="modal-form-btn">Відправити</button>
+          </form>
+        </div>
       </div>
     </div>
 
