@@ -651,6 +651,49 @@ svg {
 	animation: scale-up-center var(--anima-duration) var(--anima-function) forwards;
 }
 
+.modal-field {
+	display: flex;
+	flex-direction: column;
+
+	padding: 40px;
+}
+
+.modal-form-group {
+	display: flex;
+	flex-direction: column;
+}
+
+.modal-disc {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 23px;
+	text-align: center;
+	letter-spacing: 0.03em;
+
+	color: var(--font-submain-color);
+
+	margin-bottom: 12px;
+}
+
+.modal-form-label {
+	display: flex;
+	flex-direction: column;
+
+	font-size: 12px;
+	line-height: 14px;
+	letter-spacing: 0.01em;
+
+	color: var(--font-main-color);
+
+	margin-bottom: 4px;
+}
+
+.modal-form-field {
+	height: 40px;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+}
+
 .is-hidden {
 	visibility: hidden;
 	opacity: 0;
